@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>My Notes</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="take-a-note-div" id="take-a-note-div" tabindex="0">
+        <textarea
+          name="title-area"
+          id="title-area"
+          class="title-area"
+          placeholder="Title"
+        ></textarea>
+        <textarea
+          name="take-a-note"
+          id="take-a-note-textarea"
+          class="take-a-note-textarea"
+          placeholder="Take a note..."
+        ></textarea>
+        <div class="add-btn-div">
+          <button id="add-btn" class="add-btn">+</button>
+        </div>
+      </div>
+      <div class="pinned-notes" id="pinned-notes">
+        <h2 class="pinnedtext">Pinned Notes</h2>
+        <div class="pinned-notes-wrapper" id="pinned-notes-wrapper"></div>
+      </div>
+      <div class="allnotetext"><h2>All Notes</h2></div>
+      <div class="notewrapper" id="notewrapper"></div>
+      <div class="color-trigger">
+        <div class="color-selector" id="color-selector">
+          <div
+            class="color"
+            style="background-color: #fb6060; border-color: #fb6060"
+            onclick="handleColorSelection('#fb6060')"
+          ></div>
+          <div
+            class="color"
+            style="background-color: #ec74ae; border-color: #ec74ae"
+            onclick="handleColorSelection('#ec74ae')"
+          ></div>
+          <div
+            class="color"
+            style="background-color: #ee1bdc; border-color: #ee1bdc"
+            onclick="handleColorSelection('#ee1bdc')"
+          ></div>
+          <div
+            class="color"
+            style="background-color: #7a3cec; border-color: #7a3cec"
+            onclick="handleColorSelection('#7a3cec')"
+          ></div>
+          <div
+            class="color"
+            style="background-color: #0534f0; border-color: #0534f0"
+            onclick="handleColorSelection('#0534f0')"
+          ></div>
+          <div
+            class="color"
+            style="background-color: #13ec3e; border-color: #13ec3e"
+            onclick="handleColorSelection('#13ec3e')"
+          ></div>
+          <div
+            class="color"
+            style="background-color: #e5f231; border-color: #e5f231"
+            onclick="handleColorSelection('#e5f231')"
+          ></div>
+          <div
+            class="color"
+            style="background-color: #43cddf; border-color: #43cddf"
+            onclick="handleColorSelection('#43cddf')"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <div id="backdrop"></div>
+
+    <script src="note.js"></script>
+  </body>
+</html>
