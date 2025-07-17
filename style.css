@@ -255,3 +255,116 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+/* Mobile Responsive Styles */
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .take-a-note-div {
+    width: 90%;
+    margin-top: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  }
+
+  .take-a-note-textarea {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .note {
+    width: 90%;
+    height: auto;
+    min-height: 180px;
+    margin: 10px 0;
+  }
+
+  .note.expanded {
+    width: 90%;
+    height: 70vh;
+    max-height: 500px;
+  }
+
+  .notewrapper, .pinned-notes-wrapper {
+    width: 100%;
+    padding: 10px 5px;
+    gap: 10px;
+  }
+
+  .pinned-notes, .allnotetext {
+    width: 100%;
+    text-align: center;
+  }
+
+  .pinnedtext, .allnotetext h2 {
+    font-size: 28px;
+  }
+
+  .color-selector {
+    flex-wrap: wrap;
+    width: 200px;
+    justify-content: center;
+  }
+
+  .color {
+    height: 25px;
+    width: 25px;
+  }
+
+  .note-content {
+    max-height: 100px;
+  }
+
+  .note.expanded .note-content {
+    max-height: none;
+  }
+
+  .add-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 25px;
+  }
+
+  /* Adjust color selector position for mobile */
+  .color-selector {
+    left: 50% !important;
+    transform: translateX(-50%);
+    top: auto !important;
+    bottom: 100% !important;
+  }
+}
+
+/* Extra small devices (phones, 480px and down) */
+@media only screen and (max-width: 480px) {
+  .take-a-note-div {
+    width: 95%;
+  }
+
+  .note {
+    width: 95%;
+  }
+
+  .note.expanded {
+    width: 95%;
+    height: 80vh;
+  }
+
+  .pinnedtext, .allnotetext h2 {
+    font-size: 24px;
+  }
+
+  .noteoptions {
+    gap: 5px;
+  }
+
+  .delete-button img, 
+  .pin-button img, 
+  .color-selector-button img {
+    width: 18px;
+    height: 18px;
+  }
+}
